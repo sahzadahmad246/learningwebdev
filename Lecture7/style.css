@@ -1,0 +1,22 @@
+.parent {
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Uncomment the next line to see the child element */
+  /* position: relative; */
+}
+/* .child{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
