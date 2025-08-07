@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Select your gender</legend>
+        <label> <input type="radio" name="gender" value="male" /> Male </label>
+        <label>
+          <input type="radio" name="gender" value="female" /> Female
+        </label>
+        <label>
+          <input type="radio" name="gender" value="other" /> Other
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Pragramming languages you know</legend>
+        <label for="python">python</label>
+        <input type="checkbox" id="python" name="python" value="python" />
+        <label for="Javascript">Javascript</label>
+        <input
+          type="checkbox"
+          id="Javascript"
+          name="Javascript"
+          value="Javascript"
+        />
+        <label for="java">java</label>
+        <input type="checkbox" id="java" name="java" value="java" />
+        <label for="c++">c++</label>
+        <input type="checkbox" id="c++" name="c++" value="c++" />
+      </fieldset>
+      <fieldset>
+        <legend>Upload your resume</legend>
+        <label for="resume">choose file</label>
+        <input type="file" name="resume" id="resume" required />
+      </fieldset>
+      <input
+        type="image"
+        id="submit"
+        name="submit"
+        src="./grunge-black-right-arrow-illustration_420273-1011.webp"
+        alt="Submit" width="50" height="50"
+      />
+    </form>
+  </body>
+</html>
