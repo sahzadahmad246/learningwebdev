@@ -1,0 +1,17 @@
+p{
+    color: red;
+}
+
+#paragraph{
+    background: #000;
+    color: aliceblue;
+}
+
+.article1{
+    background: #c97b7b;
+    color: #ffff;
+    padding: 5px;
+}
+p,article{
+    width: 400px;
+}
