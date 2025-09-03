@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      section {
+        width: 100%;
+        height: 100vh;
+        background-color: #dfdfdf;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+      }
+      h1 {
+        margin-bottom: 1rem;
+      }
+      div {
+        width: 70%;
+        display: flex;
+      }
+      p {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #5a7699;
+        color: #ffffff;
+        font-size: 13px;
+      }
+      @media (min-width: 0px) and (max-width: 900px) {
+        div{
+            flex-direction: column;
+        }
+      }
+      @media (min-width: 900px)  {
+        div{
+            flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>learning media query</h1>
+      <div>
+        <p>
+          Media queries help websites adapt to different screen sizes easily.
+        </p>
+        <p>
+          Responsive design ensures a better user experience on all devices.
+        </p>
+        <p>
+          Using CSS media queries, you can style elements for mobile screens.
+        </p>
+        <p>
+          Modern web development relies heavily on flexible and adaptive
+          layouts.
+        </p>
+        <p>
+          Testing your site on various devices is crucial for accessibility.
+        </p>
+        <p>
+          Learning media queries is essential for every aspiring web developer.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
