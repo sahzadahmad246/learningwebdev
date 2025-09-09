@@ -1,0 +1,126 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --main-color: #900a6e;
+  --text-color: #391630;
+  --bg-color: #f4ecf2;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 8px rgba(180, 159, 174, 0.5);
+}
+header h1 {
+  color: var(--main-color);
+}
+header nav {
+  display: flex;
+}
+header nav li {
+  list-style: none;
+}
+header nav li a {
+  text-decoration: none;
+  padding: 0 2rem;
+  color: var(--main-color);
+}
+
+
+.recipe-container {
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+.recipe-container h2 {
+  background-color: var(--bg-color);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: 0 4px 15px #e0bad580;
+  color: var(--text-color);
+  padding: 1rem;
+}
+.recipe-container .content-image {
+  display: flex;
+  padding: 1rem;
+}
+.recipe-container .recipe-content {
+  width: 70%;
+}
+.recipe-container .recipe-ingredients {
+  margin-bottom: 1rem;
+}
+.recipe-container .recipe-ingredients h3,
+.recipe-container .recipe-process h3 {
+  background: #552148;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 1rem;
+  color: #fff;
+}
+.recipe-container .recipe-ingredients p {
+  color: #413e48;
+  padding: 0px 1.5rem;
+  line-height: 1.5;
+}
+.recipe-container .recipe-process {
+  margin-bottom: 1rem;
+}
+.recipe-container .recipe-process ol {
+  padding: 1rem 2.5rem;
+}
+.recipe-container .recipe-process li {
+  color: #413e48;
+  padding: 0px 1rem;
+  line-height: 1.5;
+}
+.recipe-container .recipe-image {
+  width: 30%;
+}
+.recipe-container .recipe-image img {
+  width: 100%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.recipe-container .recipe-image img:hover {
+  transform: scale(1.05);
+}
+
+
+footer {
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 1rem;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .social-media a {
+  text-decoration: none;
+  color: var(--main-color);
+  margin: 0.5rem 0px;
+} */
