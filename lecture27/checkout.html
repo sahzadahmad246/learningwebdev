@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(228, 234, 240);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .checkout-card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        background-color: white;
+        border-radius: 15px;
+      }
+      .checkout-card img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .order-summary {
+        padding: 20px;
+      }
+      .order-summary h2 {
+        font-size: 24px;
+        color: rgb(34, 34, 34);
+      }
+      .order-summary p {
+        font-size: 14px;
+        color: rgb(100, 100, 100);
+        line-height: 1.5;
+      }
+      .plan-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(235, 238, 243);
+        margin: 0px 20px;
+        border-radius: 15px;
+      }
+      .icon-price {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+        color: rgb(34, 34, 34);
+        font-weight: 600;
+      }
+      .dollar-icon {
+        font-size: 24px;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 50%;
+      }
+      .change-plan {
+        background: none;
+        border: none;
+        color: rgb(100, 100, 100);
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .btn{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+      }
+      .proceed-btn{
+        background-color: rgb(34, 34, 34);
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+       .cancel-btn{
+        background: none;
+        border: none;
+        color: rgb(100, 100, 100);
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: underline;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="checkout-card">
+        <img src="./checkout.png" alt="checkout" />
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <p>
+            You are about to purchase the Premium Annual Plan, which gives you unlimited access to all features and exclusive content for one year.
+          </p>
+        </div>
+        <div class="plan-card">
+          <div class="icon-price">
+            <span class="dollar-icon">💵</span>
+            <span>$99/Year</span>
+          </div>
+          <button class="change-plan">Change</button>
+        </div>
+        <div class="btn">
+          <button class="proceed-btn">Proceed to Payment</button>
+          <button class="cancel-btn">Cancel order</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
