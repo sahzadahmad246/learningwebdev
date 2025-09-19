@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Auto-fill vs Auto-fit</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      .container {
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+      .fill {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+      .fit {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+      .container div {
+        background: tomato;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>auto-fill</h2>
+    <div class="container fill">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+
+    <h2>auto-fit</h2>
+    <div class="container fit">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>
