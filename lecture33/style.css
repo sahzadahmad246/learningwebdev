@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(219, 226, 232);
+  margin: 0px auto;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 1rem;
+}
+.logo {
+  display: flex;
+
+  align-items: center;
+}
+.logo img {
+  width: 30px;
+}
+.logo p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  color: #13171d;
+}
+
+.navbar ul {
+  display: none;
+}
+.navbar ul li {
+  list-style-type: none;
+  color: #13171d;
+  padding: 0px 1rem;
+}
+.navbar ul li a {
+  color: #56616e;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.navbar ul li a:hover {
+  color: #6366f1;
+}
+.contact {
+  background-color: #6366f1;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+.contact a {
+  color: #fff;
+}
+.contact:hover {
+  background-color: #4043f3;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+}
+.hamburger {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+}
+.hamburger-icon {
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 80%;
+  }
+  .header {
+  
+    margin: 2rem 0px;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .contact {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+}
