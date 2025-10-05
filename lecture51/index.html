@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
+    <style>
+      #para-box {
+        background-color: #6145ec;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        color: #ffff;
+      }
+
+      #targetDiv{
+        background-color: #e945ec;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        color: #ffff;
+      }
+    </style>
   </head>
   <body>
     <!-- <h1 id="heading">Learning DOM</h1>
@@ -15,7 +30,13 @@
 
     <div id="para-box">
       <p class="para">Lorem ipsum dolor sit amet.</p>
+      <div id="targetDiv">
+        <p>This is a paragraph inside the nested div.</p>
+        <h1 class="heading">Sample Heading</h1>
+        <div>Here is some text inside the innermost div.</div>
+      </div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
