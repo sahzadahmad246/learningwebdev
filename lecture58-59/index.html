@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetStats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="top">
+        <h1 class="heading">LeetStats</h1>
+        <div class="userAndInput">
+          <p>Enter leetcode username</p>
+          <div class="nameAndButton">
+            <input type="text" placeholder="username" id="user-input" />
+            <button id="searchBtn">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="progressContainer">
+        <div
+          class="progressItem"
+          id="easyProgress"
+          style="--progress-degree: 0deg"
+        >
+          <span id="easyLevel">0%</span>
+          <div class="label">Easy</div>
+        </div>
+        <div
+          class="progressItem"
+          id="mediumProgress"
+          style="--progress-degree: 0deg"
+        >
+          <span id="mediumLevel">0%</span>
+          <div class="label">Medium</div>
+        </div>
+        <div
+          class="progressItem"
+          id="hardProgress"
+          style="--progress-degree: 0deg"
+        >
+          <span id="hardLevel">0%</span>
+          <div class="label">Hard</div>
+        </div>
+      </div>
+      <div class="stats"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
