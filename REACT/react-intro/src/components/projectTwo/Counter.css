@@ -31,6 +31,7 @@
   border: none;
   border-radius: 1rem;
   cursor: pointer;
+  color: #fff;
 }
 .main-counter .count-btns button:nth-child(1) {
   background-color: #a10707;
