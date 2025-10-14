@@ -1,0 +1,34 @@
+.main-colorbody {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content-div {
+  padding: 1rem;
+  margin: 2rem;
+  background-color: #140e37;
+  width: auto;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 1rem;
+}
+.content-div p {
+  color: #b2bbd8;
+}
+.change-button {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: #140e37;
+  cursor: pointer;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
