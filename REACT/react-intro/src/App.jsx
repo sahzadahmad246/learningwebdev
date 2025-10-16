@@ -7,6 +7,7 @@ import { Counter } from "./components/projectTwo/Counter";
 // import Timer from "./components/projectFive/Timer";
 import SearchSuggestion from "./components/projectFive/SearchSuggestion";
 import UserSearch from "./components/projectFive/UserSearch";
+import UseContext from "./components/projectSix/UseContext";
 function App() {
   return (
     <>
@@ -17,7 +18,8 @@ function App() {
       {/* <EventH/>  */}
       {/* <Timer/> */}
       {/* <SearchSuggestion /> */}
-      <UserSearch/>
+      {/* <UserSearch/> */}
+      <UseContext />
     </>
   );
 }

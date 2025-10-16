@@ -1,0 +1,10 @@
+.theme-main{
+    border-radius: 1rem;
+    width: 50%;
+    height: 300px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
