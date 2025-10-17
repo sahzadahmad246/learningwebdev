@@ -1,27 +1,40 @@
 import "./App.css";
-import EventH from "./components/projectFive/EventH";
-import { CRendering } from "./components/projectFour/CRendering";
-// import StateLifting from "./components/projectThree/StateLifting";
-// import UserCardApp from "./components/projectOne/userCardApp";
-import { Counter } from "./components/projectTwo/Counter";
-// import Timer from "./components/projectFive/Timer";
-import SearchSuggestion from "./components/projectFive/SearchSuggestion";
-import UserSearch from "./components/projectFive/UserSearch";
-import UseContext from "./components/projectSix/UseContext";
-function App() {
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Dashboard from "./components/pages/Dashboard";
+import Navbar from "./components/pages/Navbar";
+import Params from "./components/pages/Params";
+import Courses from "./components/pages/Courses";
+
+const Layout = () => {
   return (
     <>
-      {/* <UserCardApp /> */}
-      {/* <Counter /> */}
-      {/* <StateLifting /> */}
-      {/* <CRendering /> */}
-      {/* <EventH/>  */}
-      {/* <Timer/> */}
-      {/* <SearchSuggestion /> */}
-      {/* <UserSearch/> */}
-      <UseContext />
+      <Navbar />
+      <Outlet />
     </>
   );
+};
+function App() {
+  const router = createBrowserRouter([
+    {
+      element: <Layout />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/about", element: <About /> },
+        {
+          path: "/dashboard",
+          element: <Dashboard />,
+          children: [
+            { path: "courses", element: <Courses /> },
+            { path: "reports", element: <div>this is reports page</div> },
+          ],
+        },
+        { path: "/params/:id", element: <Params /> },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;

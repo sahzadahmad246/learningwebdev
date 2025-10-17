@@ -1,0 +1,14 @@
+.nav-ul {
+  display: flex;
+}
+.nav-ul li {
+  list-style: none;
+  padding: 1rem;
+}
+.nav-ul li .navitem {
+  text-decoration: none;
+  color: #fff;
+}
+.active-link {
+  border-bottom: 2px solid #fff;
+}
