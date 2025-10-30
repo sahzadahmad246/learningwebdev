@@ -1,6 +1,7 @@
 import "./App.css";
 import BookingSysytem from "./components/bookmyshow/bookingSysytem";
 import Cart from "./components/Cart/Cart";
+import { CharacterCounter } from "./components/Character Counter/CharacterCounter";
 import Counter from "./components/Counter";
 import NameList from "./components/useMemo/NameList ";
 import NumberList from "./components/useMemo/NumberList";
@@ -9,7 +10,7 @@ import ClickGame from "./components/useRef/ClickGame";
 import { Focus } from "./components/useRef/Focus";
 import Stopwatch from "./components/useRef/Stopwatch";
 // import TodoApp from ".mcomponents/TodoApp";
-
+import BookingSystem from "./components/bookmyshow/bookingSysytem";
 function App() {
   const seats = [
     // Category A - VIP
@@ -163,7 +164,7 @@ function App() {
     },
   ];
 
-  return <BookingSysytem seats={seats} />;
+  return <BookingSystem seats={seats} />;
 }
 
 export default App;
