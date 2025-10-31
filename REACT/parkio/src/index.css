@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Theme Variables */
+@layer base {
+  :root {
+    /* Light */
+    --color-bg: 248 250 252;
+    --color-surface: 255 255 255;
+    --color-text: 15 23 42;
+    --color-heading: 30 41 59;
+    --color-primary: 37 99 235;
+    --color-secondary: 100 116 139;
+    --color-border: 226 232 240;
+    --color-success: 34 197 94;
+    --color-error: 239 68 68;
+  }
+
+  .dark {
+    /* Dark */
+    --color-bg: 15 23 42;
+    --color-surface: 30 41 59;
+    --color-text: 226 232 240;
+    --color-heading: 241 245 249;
+    --color-primary: 59 130 246;
+    --color-secondary: 148 163 184;
+    --color-border: 51 65 85;
+    --color-success: 34 197 94;
+    --color-error: 248 113 113;
+  }
+}
+
+/* Utility classes that read the variables */
+@layer utilities {
+  .bg-theme      { @apply bg-[rgb(var(--color-bg))]; }
+  .bg-surface    { @apply bg-[rgb(var(--color-surface))]; }
+  .text-theme    { @apply text-[rgb(var(--color-text))]; }
+  .text-heading  { @apply text-[rgb(var(--color-heading))] font-semibold; }
+
+  .bg-primary    { @apply bg-[rgb(var(--color-primary))] text-white; }
+  .bg-secondary  { @apply bg-[rgb(var(--color-secondary))] text-white; }
+
+  .text-primary  { @apply text-[rgb(var(--color-primary))]; }
+  .text-secondary{ @apply text-[rgb(var(--color-secondary))]; }
+
+  .border-theme  { @apply border border-[rgb(var(--color-border))]; }
+
+  .bg-success    { @apply bg-[rgb(var(--color-success))] text-white; }
+  .bg-error      { @apply bg-[rgb(var(--color-error))] text-white; }
+  .text-success  { @apply text-[rgb(var(--color-success))]; }
+  .text-error    { @apply text-[rgb(var(--color-error))]; }
+}
